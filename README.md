@@ -13,7 +13,8 @@
                         |___/  |_|              
 </pre>
 
-# A SSH-honeypot container system built with OpenVZ and HonSSH
+# A SSH-honeypot container system
+Built on top of OpenVZ with HonSSH.
 Note: The documentation is extremely lacking because this project is still in progress (and is mostly just a collection of shell and python scripts).
 
 ### TODO ###
