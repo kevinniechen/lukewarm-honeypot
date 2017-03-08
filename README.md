@@ -1,3 +1,4 @@
+<pre>
  _       _                                      
 | |_   _| | _______      ____ _ _ __ _ __ ___   
 | | | | | |/ / _ \ \ /\ / / _` | '__| '_ ` _ \  
@@ -10,8 +11,9 @@
 | | | | (_) | | | |  __/ |_| | | |_) | (_) | |_ 
 |_| |_|\___/|_| |_|\___|\__, | | .__/ \___/ \__|
                         |___/  |_|              
+</pre>
 
-# An SSH-honeypot system built off OpenVZ containers and HonSSH
+# A SSH-honeypot container system built with OpenVZ and HonSSH
 Note: The documentation is extremely lacking because this project is still in progress (and is mostly just a collection of shell and python scripts).
 
 ### TODO ###
