@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# This script will wait X time after an attacker comes, or just Y time in general
+# And then will run the recycle script
+# This should be run once a container is running
+
+# TODO: Change times
+# Wait N seconds after attacker
+# Run recycle command
+
+wait_file() {
+  local file="$1"; shift
+  local wait_seconds="${1:-10}"; shift
+
+  until test $((wait_seconds--)) -eq 0 -o -f "$file" ; do sleep 1; done
+
+  ((++wait_seconds))
+}
+
+attacker_folder=testfolder
+
+wait_file "$attacker_folder" 3600 || {
+  echo "Folder missing after waiting for $? seconds: '$attacker_folder'"
+}
+
+echo "Intruder detected or timeout reached..."
+
+sleep 60m
+
+echo "Running recycle script"

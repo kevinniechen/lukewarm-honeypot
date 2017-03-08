@@ -1,0 +1,4 @@
+/usr/bin/nohup monitor 201 1h &
+/usr/bin/nohup monitor 202 1h &
+/usr/bin/nohup monitor 203 1h &
+/usr/bin.nohup monitor 204 1h &

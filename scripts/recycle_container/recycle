@@ -23,3 +23,9 @@ sudo vzctl stop $1
 sudo vzctl destroy $1
 sudo vzrestore /vz/dump/*-$1-*.tgz $1
 sudo vzctl start $1
+
+# Increment recycle counter
+count=$(cat /shared/counter/$1.count)
+count=$((count + 1))
+rm /shared/counter/$1.count
+echo $count > /shared/counter/$1.count
