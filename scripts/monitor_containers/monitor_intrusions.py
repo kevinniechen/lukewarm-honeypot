@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 """
-HACS102 OpenVZ Container Recycle Script
+OpenVZ Container Recycle Script
 Kevin Chen
 
 Script will wait until first container gets an attacker
